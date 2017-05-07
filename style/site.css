@@ -1,0 +1,203 @@
+body {
+  font-family: Open Sans, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #282828;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.body {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  font-family: Raleway, Helvetica, sans-serif;
+}
+.danger {
+  background: #f7ccbe;
+  font-size: 18px;
+}
+.danger .inner {
+  padding: 10px;
+  text-align: center;
+}
+.danger h1 {
+  display: inline;
+  font-size: 23px;
+}
+.danger p {
+  display: inline;
+  font-size: 23px;
+}
+.main,
+.description,
+.danger {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-shadow: 7px 10px 7px rgba(0, 0, 0, 0.3);
+  border: 1px solid #aaa;
+}
+.main img,
+.description img,
+.danger img {
+  display: inline-block;
+}
+.escape {
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 100;
+}
+.escape .escape-button {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  border-radius: 10px 10px 0px 0px;
+  background: #d33;
+}
+.escape .escape-button:link {
+  color: #fff;
+  text-decoration: none;
+}
+.escape .escape-button:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.escape .escape-button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.escape .escape-button:active {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  .escape {
+    left: 0;
+    right: 0;
+  }
+  .escape .escape-button {
+    border-radius: 0;
+  }
+}
+.main,
+.description {
+  position: relative;
+  background: #fff;
+}
+.main .inner {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.description {
+  padding-top: 20px;
+  text-align: center;
+}
+.description h1 {
+  color: #282828;
+}
+.description .inner {
+  margin-top: 10px;
+  margin: 15px;
+}
+.step-header {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  width: 100%;
+  background: #173c66;
+  color: #fff;
+}
+.step-header .inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.step-header h1,
+.step-header h2,
+.step-header h3,
+.step-header h4,
+.step-header h5,
+.step-header h6,
+.step-header p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.step-header h1,
+.step-header h2,
+.step-header h3,
+.step-header h4 {
+  font-size: 24px;
+  text-align: center;
+}
+.accordion {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.accordion .accordion-dropdown {
+  width: 100%;
+}
+.accordion .accordion-dropdown .inner {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.accordion .accordion-dropdown h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.accordion .accordion-title {
+  font-family: Raleway, Helvetica, sans-serif;
+  display: block;
+  width: calc(100% - 10px );
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #173c66;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 10px;
+  min-height: 20px;
+}
+.accordion .accordion-title:link {
+  color: #fff;
+  text-decoration: none;
+}
+.accordion .accordion-title:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.accordion .accordion-title:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.accordion .accordion-title:active {
+  color: #fff;
+  text-decoration: none;
+}
+.accordion .accordion-title::before {
+  display: block;
+  float: left;
+  margin-right: 5px;
+  height: 2em;
+  content: '▲';
+}
+.accordion-anchor:target ~ .accordion-title::before {
+  content: '▼';
+}
+.accordion-dropdown {
+  display: none;
+}
+.accordion-anchor:target ~ .accordion-dropdown {
+  display: unset;
+}
